@@ -40,14 +40,9 @@ header nav a{
   margin: 0.5em;
 }
 
-.contenido1{
-  background: #82c3a6;
-  width: 100%;
-  padding: 20px;
-}
-
 img{
   width: 100%;
+  display: block;
 }
 
 section{
@@ -58,29 +53,16 @@ section{
   flex-flow: row wrap;
 }
 
-section figure a{
-  color: black;
-  font-weight: bold;
+.paisaje{
+  filter: blur(10px);
 }
 
-#paisajes{
-  filter: drop-shadow(5px 5px 15px #82c3a6);
-  border: 2px solid black;
-  transition: transform, 1s;
+.paisaje2{
+  filter: grayscale(100%);
 }
 
-#paisajes:hover{
-  transform: rotate(10deg);
-}
-
-#retratos{
-  filter: drop-shadow(5px 5px 15px #82c3a6);
-  border: 2px solid black;
-  transition: transform, 1s;
-}
-
-#retratos:hover{
-  transform: translate(20px, -5px);
+.paisaje3{
+  filter: sepia(90%);
 }
 
 footer{
@@ -100,11 +82,12 @@ footer{
 footer .footer img{
   width: 20px;
   vertical-align: top;
+  display: inline-block;
 }
 
 @media screen and (min-width:900px) {
     .imagenes{
-      width: 45%;
+      width: 28%;
       margin: 20px;
     }
     .footer{
