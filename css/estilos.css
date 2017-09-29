@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  /*margin: 0;*/
+  background: #02010a;
+  font-family: 'Dancing Script', cursive;
+}
+
+.contenido{
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+header{
+  background: #5b7989;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+h1{
+  text-shadow: 2px 2px #02010a;
+}
+
+header nav a{
+  color: white;
+  margin: 0.5em;
+}
+
+.contenido1{
+  background: #82c3a6;
+  width: 100%;
+  padding: 20px;
+}
+
+img{
+  width: 100%;
+}
+
+section{
+  display: flex;
+  flex: 100%;
+  background: #d5c75f;
+  border: 1px solid black;
+  flex-flow: row wrap;
+}
+
+section figure a{
+  color: black;
+  font-weight: bold;
+}
+
+#paisajes{
+  filter: drop-shadow(5px 5px 15px #82c3a6);
+  border: 2px solid black;
+  transition: transform, 1s;
+}
+
+#paisajes:hover{
+  transform: rotate(10deg);
+}
+
+#retratos{
+  filter: drop-shadow(5px 5px 15px #82c3a6);
+  border: 2px solid black;
+  transition: transform, 1s;
+}
+
+#retratos:hover{
+  transform: translate(20px, -5px);
+}
+
+footer{
+  background: #c6d5c5;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.footer{
+  padding-top: 20px;
+}
+
+footer .footer img{
+  width: 20px;
+  vertical-align: top;
+}
+
+@media screen and (min-width:900px) {
+    .imagenes{
+      width: 45%;
+      margin: 20px;
+    }
+    .footer{
+      width: 25%;
+    }
+
+}
+
+@media (max-width: 900px) {
+  .contenido{
+    width: 100%;
+    padding: 0;
+  }
+  header{
+    flex-direction: column;
+  }
+  .imagenes{
+    width: 100%;
+    margin: 20px;
+  }
+  footer{
+    flex-direction: column;
+  }
+}
